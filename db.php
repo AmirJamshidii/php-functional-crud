@@ -1,10 +1,10 @@
 <?php
 
 function Createdb(){
-    $servername="localhost";
-    $username="root";
-    $password="";
-    $dbname="bookstore";
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    $dbname = "bookstore";
     
     // create connection
     $con=mysqli_connect($servername, $username, $password);
@@ -19,23 +19,23 @@ function Createdb(){
 
     
     if(mysqli_query($con, $sql)){
-        $con=mysqli_connect($servername, $username, $password, $dbname);
+        $con = mysqli_connect($servername, $username, $password, $dbname);
         
         //create table
-        $sql1="CREATE TABLE IF NOT EXISTS books(
+        $sql = "CREATE TABLE IF NOT EXISTS books(
             id INT(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
             bookname VARCHAR (13) NOT NULL,
             publisher VARCHAR (20),
             price FLOAT(6) NOT NULL)";
             
-            if(mysqli_query($con, $sql1)){
+            if(mysqli_query($con, $sql)){
                 return $con;
             }else{
                 echo "cannot create table" .mysqli_error($con);
             }
    
     } else{
-        echo "error while creating database ".mysqli_error($con);
+        echo "error while creating database " .mysqli_error($con);
     }
 
 }
