@@ -7,7 +7,7 @@ function Createdb(){
     $dbname = "bookstore";
     
     // create connection
-    $con=mysqli_connect($servername, $username, $password);
+    $con = mysqli_connect($servername, $username, $password);
 
     //error check
     if(!$con){
@@ -15,7 +15,7 @@ function Createdb(){
     }
 
     //create database
-    $sql="CREATE DATABASE IF NOT EXISTS $dbname";
+    $sql = "CREATE DATABASE IF NOT EXISTS $dbname";
 
     
     if(mysqli_query($con, $sql)){

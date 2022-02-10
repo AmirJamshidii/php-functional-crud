@@ -25,11 +25,11 @@
             <label for = "ID"> ID:</label>
             <input type = text placeholder="ID" name="ID"><br>
             <label for = "Publisher">Bookname: </label>
-            <input type = text placeholder="Bookname" name="Bookname"><br>
+            <input type = text placeholder="Bookname" name="bookname"><br>
             <label for = "ID"> Publisher:</label>
-            <input type = text placeholder="Publisher" name = "Publisher"><br>
+            <input type = text placeholder="Publisher" name = "publisher"><br>
             <label for = "Publisher">Price: </label>
-            <input type = text placeholder="Price" name="Price">
+            <input type = text placeholder="Price" name="price">
               
             <div style="text-align: center; "class="button">
                 <button style="color:green; width:50px; height: 50px; " name="create" title="create">Create</button>
