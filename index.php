@@ -65,7 +65,7 @@
                             <td><?php echo $row['bookname']; ?></td>
                             <td><?php echo $row['publisher']; ?></td>
                             <td><?php echo $row['price']; ?></td>
-                            <td><button style="color:orange; width:50px; height: 50px; " name="edit" title="edit">edit</button></td>
+                            <td><?php deleteallbutton(); ?></td>
                         </tr>
                     <?php     
                     }
