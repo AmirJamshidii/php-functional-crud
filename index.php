@@ -52,8 +52,28 @@
             <th>Bookname</th>
             <th>Publisher</th>
             <th>Price</th>
+            <th> edit </th>
 
         </tr>
+            <?php
+            if(isset($_POST['read'])){
+                $result = getdata();
+                if($result){
+                    while($row = mysqli_fetch_assoc($result)){?>
+                        <tr>
+                            <td><?php echo $row['id']; ?></td>
+                            <td><?php echo $row['bookname']; ?></td>
+                            <td><?php echo $row['publisher']; ?></td>
+                            <td><?php echo $row['price']; ?></td>
+                            <td><button style="color:orange; width:50px; height: 50px; " name="edit" title="edit">edit</button></td>
+                        </tr>
+                    <?php     
+                    }
+                }
+            }
+
+            
+        ?>
 
 
     </table>
