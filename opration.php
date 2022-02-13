@@ -125,7 +125,7 @@ function deleteallbutton(){
     if($result){
         while($row = mysqli_fetch_assoc($result) > 0){
             $i++;
-            if($i > 0){
+            if($i > 3){
                 $element = "<button > deleteall </button";  
             }
         }
