@@ -123,7 +123,7 @@ function deleteallbutton(){
     $result = getdate();
     $i = 0;
     if($result){
-        while($row = mysqli_fetch_assoc($result) > 0){
+        while($row = mysqli_fetch_assoc($GLOBALS['result']) > 0){
             $i++;
             if($i > 3){
                 $element = "<button > deleteall </button";  
