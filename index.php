@@ -20,7 +20,7 @@
     </div>
     <br>
 
-    <div style="text-align: center; " class="inpuy date">
+    <div style="text-align: center; " class="input date">
         <form style="text-align: center; " action="" method="POST">
             <label for = "ID"> ID:</label>
             <input type = text placeholder="ID" name="ID"><br>
